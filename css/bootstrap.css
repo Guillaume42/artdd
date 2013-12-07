@@ -7114,3 +7114,16 @@ td.visible-print {
     display: none !important;
   }
 }
+
+body {
+  background: url("../img/gray_jean.png");
+}
+
+body article.gallery {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body .centered {
+  margin: auto;
+}
