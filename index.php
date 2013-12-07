@@ -91,15 +91,13 @@
 
         <!-- Barre de recherche -->
         <div class="col-lg-12">
-          <div class="col-lg-6 centered">
-            <div>
+            <div class="search-aera">
               <form id="form-search">
-                <input type="test" id="search-bar" name="search-bar">
+                <input type="text" id="search-bar" name="search-bar">
                 <button id="search-button" name="search-button"><span class="glyphicon glyphicon-search"></span></button>
               </form>
             </div>
-            <div>0€ Reversés</div>
-          </div>
+            <div class="counter-aera">0€ Reversés</div>
         </div>
 
         <!-- Troisieme colonne -->

@@ -12,4 +12,41 @@ body
 	{
 		margin: auto;
 	}
+
+	.search-aera
+	{
+		width: 80%;
+		text-align: right;
+		display: inline-block;
+		position: relative;
+		min-height: 40px;
+
+		input[type="text"]
+		{
+			width: 100%;
+			border: 1px solid rgba(0,0,0,0.1);
+			border-radius: 3px;
+			padding: 8px 13px;
+			max-height: 40px;
+
+			&+button
+			{
+				position: absolute;
+				top: 0px;
+				right: 5px;
+				background-color: transparent;
+				border: none;
+				outline: none;
+				min-height: 40px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.counter-aera
+	{
+		text-align: left;
+		width: 19%;
+		display: inline-block;
+	}
 }
