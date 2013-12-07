@@ -38,6 +38,7 @@
           <ul class="nav navbar-nav">
             <li><a class="navbar-brand" href="index.php">L'art d'aider</a></li>
           <li><a href="formulaire.php">Déposer une annonce</a></li>
+          <li><a href="status.php">Statistiques</a></li>
           <li><a href="#">Offres</a></li>
           <li><a href="#">Association</a></li>
           </ul>

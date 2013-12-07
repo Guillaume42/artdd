@@ -7223,6 +7223,10 @@ article.gallery img {
   vertical-align: center;
 }
 
+.main-counter img {
+  max-width: 100%;
+}
+
 .main-counter h1,
 .main-counter h2 {
   padding: 0;
@@ -7254,6 +7258,9 @@ article.gallery img {
   body article.gallery img {
     max-width: 21%;
     margin: 2px;
+  }
+  body .main-counter + .main-counter {
+    border-left: none;
   }
 }
 
