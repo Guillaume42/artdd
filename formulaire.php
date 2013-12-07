@@ -18,10 +18,10 @@
 if(isset($_POST['titre'])
 {
 
-$dns = 'mysql:host=db4free.net;dbname=artdd';
+$dns = 'db4free.net';
 $utilisateur = 'gsarfati';
 $motDePasse = 'gqe7vryA';
-$DB = new PDO( $dns, $utilisateur, $motDePasse );
+$DB = new mysqli($dns, $utilisateur, $motDePasse, "artdd");
 
 $titre = $DB->quote($_POST['titre']); 
 $photo = $DB->quote($_POST['photo']);
@@ -38,9 +38,9 @@ $nom = $DB->quote($_POST['nom']);
 $prenom = $DB->quote($_POST['prenom']);
 						
 	// Insertion dans la base de donnée							
-$req = $DB->exec("INSERT INTO annonces(titre, photo, video, description, vendeur, price, don, asso, active, transaction) VALUES ($titre, $photo, $video, $description, $vendeur, $price, $don, $asso, 1, 0)");
+$DB->query("INSERT INTO annonces(titre, photo, video, description, vendeur, price, don, asso, active, transaction) VALUES ($titre, $photo, $video, $description, $vendeur, $price, $don, $asso, 1, 0)");
 
-$req = $DB->exec("INSERT INTO users(nom, prenom, email, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)")	
+$DB->query("INSERT INTO users(nom, prenom, email, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)")	
 
 echo '<br><br>'.$_POST['titre'].' a bien etait enrgistrer.';
 }
