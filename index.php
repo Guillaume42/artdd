@@ -46,7 +46,7 @@
       </div>
     </div>
     <div class="title">
-      <h1>Artdd</h1>
+      <h1>artdd</h1>
       <h3>faites des euros, faites des heureux !</h3>
     </div>
 <div class="container">
@@ -62,9 +62,9 @@
         <!-- Première colonne -->
         <article class="gallery col-lg-12">
             <img src="img/thumbs/001.jpg">
-            <img src="img/thumbs/003.jpg">
             <img src="img/thumbs/002.jpg">
             <img src="img/thumbs/003.jpg">
+            <img src="img/thumbs/012.jpg">
         </article>
 
         <!-- Deuxieme colonne -->
