@@ -13,40 +13,59 @@ body
 		margin: auto;
 	}
 
-	.search-aera
+	.main-search
 	{
-		width: 80%;
-		text-align: right;
-		display: inline-block;
+		font-size: 1.4em;
 		position: relative;
-		min-height: 40px;
 
-		input[type="text"]
+		.search-aera
 		{
-			width: 100%;
-			border: 1px solid rgba(0,0,0,0.1);
-			border-radius: 3px;
-			padding: 8px 13px;
-			max-height: 40px;
+			width: 80%;
+			text-align: right;
+			display: inline-block;
+			position: relative;
+			min-height: 60px;
+				margin: 0px;
 
-			&+button
+			input[type="text"]
 			{
-				position: absolute;
-				top: 0px;
-				right: 5px;
-				background-color: transparent;
-				border: none;
-				outline: none;
-				min-height: 40px;
-				line-height: 20px;
+				width: 100%;
+			padding: 14px;
+				border: 1px solid rgba(0,0,0,0.3);
+			border-radius: 3px 0px 0px 3px;
+				height: 60px;
+					line-height: 35px;
+
+				&+button
+				{
+					position: absolute;
+					top: 0px;
+					right: 15px;
+					color: #888;
+					background-color: transparent;
+					border: none;
+					outline: none;
+					min-height: 60px;
+					line-height: 35px;
+				}
 			}
 		}
-	}
 
-	.counter-aera
-	{
-		text-align: left;
-		width: 19%;
-		display: inline-block;
+		.counter-aera
+		{
+			padding: 14px;
+			position: relative;
+			text-align: left;
+			background-color: #fff;
+			width: 19%;
+			height: 60px;
+			line-height: 30px;
+			left: -10px;
+			display: inline-block;
+			border: 1px solid rgba(0,0,0,0.3);
+			border-left-color:rgba(0,0,0,0.1);	
+			border-radius: 0px 3px 3px 0px;
+				margin: 0px;
+		}
 	}
 }

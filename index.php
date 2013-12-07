@@ -13,9 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/odometer.css" />
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -27,7 +25,7 @@
   </head>
 
   <body>
-    <div class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -36,7 +34,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">L'art d'aider</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -90,14 +88,14 @@
       </article>
 
         <!-- Barre de recherche -->
-        <div class="col-lg-12">
+        <div class="col-lg-12 main-search">
             <div class="search-aera">
               <form id="form-search">
-                <input type="text" id="search-bar" name="search-bar">
+                <input placeholder="Rechercher..." type="text" id="search-bar" name="search-bar">
                 <button id="search-button" name="search-button"><span class="glyphicon glyphicon-search"></span></button>
               </form>
             </div>
-            <div class="counter-aera">0€ Reversés</div>
+            <div class="counter-aera"><span class="counter odometer">0</span> Euros reversés</div>
         </div>
 
         <!-- Troisieme colonne -->
@@ -129,6 +127,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/artdd.js"></script>
   </body>
 </html>

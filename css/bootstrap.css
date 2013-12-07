@@ -7128,35 +7128,53 @@ body .centered {
   margin: auto;
 }
 
-body .search-aera {
+body .main-search {
+  position: relative;
+  font-size: 1.4em;
+}
+
+body .main-search .search-aera {
   position: relative;
   display: inline-block;
   width: 80%;
-  min-height: 40px;
+  min-height: 60px;
+  margin: 0;
   text-align: right;
 }
 
-body .search-aera input[type="text"] {
+body .main-search .search-aera input[type="text"] {
   width: 100%;
-  max-height: 40px;
-  padding: 8px 13px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  height: 60px;
+  padding: 14px;
+  line-height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px 0 0px 3px;
 }
 
-body .search-aera input[type="text"] + button {
+body .main-search .search-aera input[type="text"] + button {
   position: absolute;
   top: 0;
-  right: 5px;
-  min-height: 40px;
-  line-height: 20px;
+  right: 15px;
+  min-height: 60px;
+  line-height: 35px;
+  color: #888;
   background-color: transparent;
   border: none;
   outline: none;
 }
 
-body .counter-aera {
+body .main-search .counter-aera {
+  position: relative;
+  left: -10px;
   display: inline-block;
   width: 19%;
+  height: 60px;
+  padding: 14px;
+  margin: 0;
+  line-height: 30px;
   text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 3px 3px 0px;
 }
