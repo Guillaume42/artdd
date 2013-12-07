@@ -45,6 +45,10 @@
         </div><!--/.nav-collapse -->
       </div>
     </div>
+    <div class="title">
+      <h1>Artdd</h1>
+      <h3>faites des euros, faites des heureux !</h3>
+    </div>
 <div class="container">
 <!--
       <div class="jumbotron">
@@ -57,34 +61,18 @@
 
         <!-- Première colonne -->
         <article class="gallery col-lg-12">
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/001.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/003.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/002.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/003.jpg">
-        </div>
-      </article>
+            <img src="img/thumbs/001.jpg">
+            <img src="img/thumbs/003.jpg">
+            <img src="img/thumbs/002.jpg">
+            <img src="img/thumbs/003.jpg">
+        </article>
 
         <!-- Deuxieme colonne -->
         <article class="gallery col-lg-12">
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/004.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/005.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/006.jpg">
-        </div>
-        <div class="col-lg-3">
-            <img class="img-rounded" src="img/thumbs/007.jpg">
-        </div>
+            <img src="img/thumbs/004.jpg">
+            <img src="img/thumbs/005.jpg">
+            <img src="img/thumbs/006.jpg">
+            <img src="img/thumbs/007.jpg">
       </article>
 
         <!-- Barre de recherche -->
@@ -100,18 +88,10 @@
 
         <!-- Troisieme colonne -->
         <article class="gallery col-lg-12">
-        <div class="col-lg-3">
             <img class="img-rounded" src="img/thumbs/008.jpg">
-        </div>
-        <div class="col-lg-3">
             <img class="img-rounded" src="img/thumbs/009.jpg">
-        </div>
-        <div class="col-lg-3">
             <img class="img-rounded" src="img/thumbs/010.jpg">
-        </div>
-        <div class="col-lg-3">
             <img class="img-rounded" src="img/thumbs/011.jpg">
-        </div>
       </article>
 
       </div>

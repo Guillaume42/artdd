@@ -2,6 +2,8 @@
  * Bootstrap [VERSION ARTDD]_.pluck(pkg.licenses, "url").join(", ") %>
  */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 
 article,
@@ -7116,7 +7118,9 @@ td.visible-print {
 }
 
 body {
-  background: url("../img/gray_jean.png");
+  font-family: 'Open Sans', sans-serif;
+  /*background: url("../img/gray_jean.png");*/
+
 }
 
 body #mobile-header {
@@ -7129,9 +7133,13 @@ body #mobile-header {
   }
 }
 
-body article.gallery {
-  padding-top: 10px;
-  padding-bottom: 10px;
+body .title {
+  text-align: center;
+}
+
+body article.gallery img {
+  max-width: 23%;
+  margin: 2%;
 }
 
 body .centered {
