@@ -8,7 +8,7 @@ var getCount = function()
 {
 	$.get("counter.php", function(d)
 		{
-			$(".odometer#home").html(parseInt(d));
+			$(".odometer#home-counter").html(parseInt(d));
 		});
 }
 
