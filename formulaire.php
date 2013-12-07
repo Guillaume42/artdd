@@ -15,14 +15,14 @@
 <input type="submit" value="valider"/>
 </form>
 <?php
-if(isset($_POST['titre'])
+if(isset($_POST['titre']))
 {
 
 $dns = 'mysql:host=db4free.net;dbname=artdd';
 $utilisateur = 'gsarfati';
 $motDePasse = 'gqe7vryA';
 $DB = new PDO( $dns, $utilisateur, $motDePasse );
-
+var_dump($_POST);
 $titre = $DB->quote($_POST['titre']); 
 $photo = $DB->quote($_POST['photo']);
 $video = $DB->quote($_POST['video']);
@@ -38,10 +38,11 @@ $nom = $DB->quote($_POST['nom']);
 $prenom = $DB->quote($_POST['prenom']);
 						
 	// Insertion dans la base de donnée							
-$req = $DB->exec("INSERT INTO annonces(titre, photo, video, description, vendeur, price, don, asso, active, transaction) VALUES ($titre, $photo, $video, $description, $vendeur, $price, $don, $asso, 1, 0)");
+$req = $DB->exec("INSERT INTO annonces(titre, photo, video, description, vendeur, price, don, asso, active, transaction) VALUES (
+	$titre, $photo, $video, $description, $vendeur, $price, $don, $asso, 1, 0)");
 
-$req = $DB->exec("INSERT INTO users(nom, prenom, email, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)")	
+$req = $DB->exec("INSERT INTO users(nom, prenom, email, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)");
 
-echo '<br><br>'.$_POST['titre'].' a bien etait enrgistrer.';
+echo('<br><br>'.$_POST['titre'].' a bien été enregistré.');
 }
 ?>

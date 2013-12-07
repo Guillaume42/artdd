@@ -7137,9 +7137,13 @@ body .title {
   text-align: center;
 }
 
+body article.gallery {
+  text-align: center;
+}
+
 body article.gallery img {
-  max-width: 23%;
-  margin: 2%;
+  max-width: 24%;
+  margin: 5px 4px;
 }
 
 body .centered {
