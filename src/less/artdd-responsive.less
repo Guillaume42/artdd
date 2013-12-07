@@ -1,0 +1,70 @@
+
+body
+{
+	@media (max-width: @screen-lg)
+  	{
+  		.main-search
+  		{
+			
+			.search-aera
+			{
+				width: 100%;
+			}
+
+	  		.counter-aera
+	  		{
+	  			display: block;
+	  			border: none;
+	  			width: 80%;
+	  			margin: auto;
+	  			padding: 15px 0px;
+	  			text-align: center;
+	  			font-size: 2em;
+	  		}
+	  	}
+	  	article.gallery
+	  	{
+	  		img
+	  		{
+				max-width: 21%;
+				margin: 2px;
+			}
+		}
+  	}
+
+  	@media (max-width: @screen-md)
+  	{
+	  	article.gallery
+	  	{
+	  		img
+	  		{
+				max-width: 21%;
+				margin: 2px;
+			}
+		}
+  	}
+
+  	@media (max-width: @screen-xs)
+  	{
+  		.main-search .counter-aera
+  		{
+  			height: auto !important;
+	  			font-size: 0.8em;
+	  		.odometer
+	  		{
+	  			font-size: 2em;
+	  			display: block;
+	  			margin: auto;
+	  		}
+	  	}
+	  	article.gallery
+	  	{
+	  		img
+	  		{
+				max-width: 22%;
+				margin: 1px;
+			}
+		}
+  	}
+  }
+
