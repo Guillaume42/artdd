@@ -24,7 +24,9 @@ if(isset($_POST['titre']))
 	$req = $DB->exec("INSERT INTO a_annonces(titre, photo, video, description, vendeur, price, don, asso, active, transaction) 
 		VALUES ($titre, $photo, $video, $description, $vendeur, $price, $don, $asso, 1, 0)");
 
-	$req = $DB->exec("INSERT INTO a_users(nom, prenom, email, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)");
+  $q = "INSERT INTO a_users(nom, prenom, mail, adresse, tel, visible) VALUES($nom, $prenom, $email, $adresse, $tel, 1)";
+  var_dump($q);
+	$req = $DB->exec($q);
 	echo '<br><br>'.$_POST['titre'].' a bien été enregistré.';
 }
 
