@@ -1,6 +1,18 @@
 body
 {
+
 	background: url("../img/gray_jean.png");
+
+	#mobile-header
+	{
+	    display: none;
+	}
+	@media only screen and (max-width: 767px)
+	{
+	    #mobile-header {
+	        display: block;
+	    }
+	}
 
 	article.gallery
 	{

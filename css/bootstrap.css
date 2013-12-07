@@ -7119,6 +7119,16 @@ body {
   background: url("../img/gray_jean.png");
 }
 
+body #mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  body #mobile-header {
+    display: block;
+  }
+}
+
 body article.gallery {
   padding-top: 10px;
   padding-bottom: 10px;

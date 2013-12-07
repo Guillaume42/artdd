@@ -14,6 +14,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/odometer.css" />
+    <link rel="stylesheet" href="css/jquery.sidr.light.css" />
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -28,20 +29,19 @@
     <div class="navbar" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <div id="mobile-header">
+              <a id="responsive-menu-button" href="#sidr-main">Menu</a>
+          </div>
           <a class="navbar-brand" href="#">L'art d'aider</a>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navigation">
+          <nav>
           <ul class="nav navbar-nav">
           <li><a href="#">Déposer un annonce</a></li>
           <li><a href="#">Offres</a></li>
           <li><a href="#">Association</a></li>
           </ul>
+        </nav>
         </div><!--/.nav-collapse -->
       </div>
     </div>
@@ -130,6 +130,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/odometer.min.js"></script>
+    <script src="js/jquery.sidr.js"></script>
     <script src="js/artdd.js"></script>
   </body>
 </html>
